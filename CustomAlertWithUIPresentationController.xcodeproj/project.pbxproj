@@ -14,6 +14,9 @@
 		E37915AB1CAA6BCA00E06282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37915A91CAA6BCA00E06282 /* LaunchScreen.storyboard */; };
 		E37915B61CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37915B51CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerTests.swift */; };
 		E37915C11CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37915C01CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerUITests.swift */; };
+		E3A381D81CAA6C580084F44A /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A381D71CAA6C580084F44A /* CustomPresentationController.swift */; };
+		E3A381DA1CAA6C7C0084F44A /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A381D91CAA6C7C0084F44A /* CustomAlertViewController.swift */; };
+		E3A381DC1CAA6CB50084F44A /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A381DB1CAA6CB50084F44A /* CustomAlertViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E37915BC1CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomAlertWithUIPresentationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37915C01CAA6BCA00E06282 /* CustomAlertWithUIPresentationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertWithUIPresentationControllerUITests.swift; sourceTree = "<group>"; };
 		E37915C21CAA6BCA00E06282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A381D71CAA6C580084F44A /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		E3A381D91CAA6C7C0084F44A /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		E3A381DB1CAA6CB50084F44A /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				E37915A01CAA6BCA00E06282 /* AppDelegate.swift */,
 				E37915A21CAA6BCA00E06282 /* ViewController.swift */,
 				E37915A41CAA6BCA00E06282 /* Main.storyboard */,
+				E3A381D91CAA6C7C0084F44A /* CustomAlertViewController.swift */,
+				E3A381DB1CAA6CB50084F44A /* CustomAlertViewController.storyboard */,
+				E3A381D71CAA6C580084F44A /* CustomPresentationController.swift */,
 				E37915A71CAA6BCA00E06282 /* Assets.xcassets */,
 				E37915A91CAA6BCA00E06282 /* LaunchScreen.storyboard */,
 				E37915AC1CAA6BCA00E06282 /* Info.plist */,
@@ -230,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E37915AB1CAA6BCA00E06282 /* LaunchScreen.storyboard in Resources */,
+				E3A381DC1CAA6CB50084F44A /* CustomAlertViewController.storyboard in Resources */,
 				E37915A81CAA6BCA00E06282 /* Assets.xcassets in Resources */,
 				E37915A61CAA6BCA00E06282 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A381DA1CAA6C7C0084F44A /* CustomAlertViewController.swift in Sources */,
 				E37915A31CAA6BCA00E06282 /* ViewController.swift in Sources */,
 				E37915A11CAA6BCA00E06282 /* AppDelegate.swift in Sources */,
+				E3A381D81CAA6C580084F44A /* CustomPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +496,7 @@
 				E37915C71CAA6BCA00E06282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E37915C81CAA6BCA00E06282 /* Build configuration list for PBXNativeTarget "CustomAlertWithUIPresentationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				E37915CA1CAA6BCA00E06282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E37915CB1CAA6BCA00E06282 /* Build configuration list for PBXNativeTarget "CustomAlertWithUIPresentationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				E37915CD1CAA6BCA00E06282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

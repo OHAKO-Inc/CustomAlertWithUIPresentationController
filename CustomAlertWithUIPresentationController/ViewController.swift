@@ -8,18 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+final class ViewController: UIViewController {
+    
+    @IBAction func showButtonTapped(sender: UIButton) {
+        showCustomAlertVC("確認", message: "アラートテストです。")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func showCustomAlertVC(title: String, message: String) {
+        let customAlertVC = UIStoryboard(name: "CustomAlertViewController", bundle: nil).instantiateInitialViewController() as! CustomAlertViewController
+        customAlertVC.setup(title: title, message: message)
+        
+        customAlertVC.modalPresentationStyle = .Custom
+        customAlertVC.transitioningDelegate = self
+        presentViewController(customAlertVC, animated: true, completion: nil)
     }
+}
 
-
+extension ViewController: UIViewControllerTransitioningDelegate {
+    
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        return CustomPresentationController(presentedViewController: presented, presentingViewController: presenting)
+    }
 }
 
