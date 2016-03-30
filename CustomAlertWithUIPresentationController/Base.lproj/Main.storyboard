@@ -24,10 +24,19 @@
                                     <action selector="showButtonTapped:" destination="bIc-qp-h4d" eventType="touchUpInside" id="IHh-NI-mu9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5N-tg-SJ6">
+                                <rect key="frame" x="218" y="325" width="165" height="30"/>
+                                <state key="normal" title="デフォルトアラート表示"/>
+                                <connections>
+                                    <action selector="defaultAlertButtonTapped:" destination="bIc-qp-h4d" eventType="touchUpInside" id="dmT-4e-HS0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="x5N-tg-SJ6" firstAttribute="centerX" secondItem="eRJ-YS-MU4" secondAttribute="centerX" id="1ou-vt-6IH"/>
                             <constraint firstItem="TG0-8m-Amd" firstAttribute="centerX" secondItem="eRJ-YS-MU4" secondAttribute="centerX" id="FAn-rl-WmP"/>
+                            <constraint firstItem="x5N-tg-SJ6" firstAttribute="top" secondItem="TG0-8m-Amd" secondAttribute="bottom" constant="10" id="U0v-Bj-fWE"/>
                             <constraint firstItem="TG0-8m-Amd" firstAttribute="centerY" secondItem="eRJ-YS-MU4" secondAttribute="centerY" id="iKr-9v-0cy"/>
                         </constraints>
                     </view>

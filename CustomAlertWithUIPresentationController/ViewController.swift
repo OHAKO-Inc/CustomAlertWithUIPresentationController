@@ -10,8 +10,18 @@ import UIKit
 
 final class ViewController: UIViewController {
     
+    @IBAction func defaultAlertButtonTapped(sender: AnyObject) {
+        let alertController = UIAlertController(title: "デフォルトアラート", message: "UIAlertController使用", preferredStyle: .Alert)
+        alertController.addAction(
+            UIAlertAction(title: "閉じる", style: .Default, handler: { (action) in
+                alertController.dismissViewControllerAnimated(true, completion: nil)
+            })
+        )
+        presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func showButtonTapped(sender: UIButton) {
-        showCustomAlertVC("確認", message: "アラートテストです。")
+        showCustomAlertVC("カスタムアラート", message: "自作クラス使用")
     }
     
     func showCustomAlertVC(title: String, message: String) {
