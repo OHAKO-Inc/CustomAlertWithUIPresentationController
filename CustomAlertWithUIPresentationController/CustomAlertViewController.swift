@@ -16,11 +16,11 @@ final class CustomAlertViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
-    @IBAction func closeButtonTapped(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closeButtonTapped(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
-    func setup(title title: String, message: String) {
+    func setup(title: String, message: String) {
         self.initialTitle = title
         self.initialMessage = message
     }
